@@ -643,7 +643,7 @@ address {
   left: 50%;
   width: 528px;
   height: 581px;
-  padding: 8px;
+  padding: 40px;
   background-color: var(--text-box);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -653,6 +653,9 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: block;
   margin-left: auto;
   /*margin-right: 8px;
@@ -666,6 +669,25 @@ address {
   background-position: center;
 }
 
+textarea {
+  resize: none;
+}
+
+.modal-form {
+}
+.modal-text {
+  width: 448px;
+  height: 23px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-cl);
+}
+.modal-inputs {
+  list-style: none;
+}
 /*Portfolio: popup-window*/
 .popup-window {
   position: absolute;
