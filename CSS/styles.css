@@ -639,6 +639,7 @@ address {
 }
 .modal {
   display: flex;
+  flex-direction: column;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -657,17 +658,20 @@ address {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   margin-left: auto;
-  /*margin-right: 8px;
-  margin-top: 8px;*/
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
-  background-image: url(../images/modal-btnclose.svg);
-  background-position: center;
+}
+
+.btn-close-modal :hover {
+  fill: var(--accent-cl);
 }
 
 textarea {
@@ -675,6 +679,7 @@ textarea {
 }
 
 .modal-form {
+  margin-top: 12px;
 }
 .modal-text {
   width: 448px;
@@ -687,7 +692,7 @@ textarea {
   letter-spacing: 0.03em;
   color: var(--title-cl);
 }
-.modal-inputs {
+/*.modal-inputs {
   list-style: none;
   padding-left: 0;
   margin-top: 12px;
@@ -695,18 +700,25 @@ textarea {
   height: 342px;
 }
 .modal-inputs-li {
-  height: 58px;
+  position: relative;
 }
 .modal-inputs-li:not(:last-child) {
   margin-bottom: 10px;
-}
+}*/
 
 .modal-input-label {
   width: 448px;
   height: 40px;
+  padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.modal-input-icon {
+  position: absolute;
+  bottom: 5px;
+  left: 12px;
 }
 
 .comment {

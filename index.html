@@ -580,46 +580,70 @@
         </div>
       </section>
     </footer>
+
+    <!--Modal Window-->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="btn-close-modal" data-modal-close></button>
+        <button class="btn-close-modal" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/icons/sprite.svg#modal-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
 
         <form class="modal-form">
-          <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
-          <ul class="modal-inputs">
-            <li class="modal-inputs-li">
-              <label class="lbtxt" for="name">Имя</label>
-              <input
-                class="modal-input-label"
-                type="text"
-                name="name"
-                id="name"
-              />
-            </li>
-            <li class="modal-inputs-li">
-              <label class="lbtxt" for="tel">Телефон</label>
-              <input class="modal-input-label" type="tel" name="tel" id="tel" />
-            </li>
-            <li class="modal-inputs-li">
-              <label class="lbtxt" for="mail">Почта</label>
-              <input
-                class="modal-input-label"
-                type="email"
-                name="mail"
-                id="mail"
-              />
-            </li>
-            <li class="modal-inputs-li">
-              <label class="lbtxt" for="comment">Комментарий</label>
-              <textarea
-                class="modal-input-label comment"
-                name="comment"
-                id="comment"
-                placeholder="Введите текст"
-                rows="10"
-              ></textarea>
-            </li>
-          </ul>
+          <div class="modal-inputs">
+            <label class="lbtxt" for="name">Имя</label>
+            <input
+              class="modal-input-label"
+              type="text"
+              name="name"
+              id="name"
+            />
+            <div class="modal-input-icon">
+              <svg width="18" height="18">
+                <use href="./images/icons/sprite.svg#modal-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-inputs">
+            <label class="lbtxt" for="tel">Телефон</label>
+            <input class="modal-input-label" type="tel" name="tel" id="tel" />
+            <div class="modal-input-icon">
+              <svg width="18" height="18">
+                <use href="./images/icons/sprite.svg#modal-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-inputs">
+            <label class="lbtxt" for="mail">Почта</label>
+            <input
+              class="modal-input-label"
+              type="email"
+              name="mail"
+              id="mail"
+            />
+            <div class="modal-input-icon">
+              <svg width="18" height="18">
+                <use href="./images/icons/sprite.svg#modal-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-inputs">
+            <label class="lbtxt" for="comment">Комментарий</label>
+            <textarea
+              class="modal-input-label comment"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+              rows="10"
+            ></textarea>
+          </div>
+
           <div class="checkbox">
             <input type="checkbox" name="checkbox" id="checkbox" />
             <label class="checkbox-text" for="checkbox"
