@@ -764,7 +764,7 @@ textarea {
 .checkbox-icon {
   cursor: pointer;
   position: absolute;
-  top: 45%;
+  top: 50%;
   transform: translateY(-50%);
   display: flex;
   justify-content: center;
