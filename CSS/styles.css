@@ -267,17 +267,17 @@ p {
 }
 
 .icon-antenna::before {
-  background-image: url(../images/antenna.png);
+  background-image: url(../images/icons/antenna.svg);
 }
 
 .icon-clock::before {
-  background-image: url(../images/clock.png);
+  background-image: url(../images/icons/clock.svg);
 }
 .icon-diagram::before {
-  background-image: url(../images/diagram.png);
+  background-image: url(../images/icons/diagram.svg);
 }
 .icon-astronaut::before {
-  background-image: url(../images/astronaut.png);
+  background-image: url(../images/icons/astronaut.svg);
 }
 
 .menu-link {
@@ -458,6 +458,10 @@ address {
 }
 .samples-items:nth-last-child(-n + 3) {
   margin-bottom: 0px;
+}
+
+.sample-itens__link {
+  text-decoration: none;
 }
 
 .sample-small-container {
