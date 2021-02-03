@@ -29,6 +29,9 @@ img {
 p {
   margin: 0;
 }
+a {
+  display: block;
+}
 :root {
   --main-text-cl: #757575;
   --accent-cl: #2196f3;
@@ -113,16 +116,20 @@ p {
   position: relative;
 }
 
+.nav-link {
+  color: var(--accent-cl);
+}
+
 .nav-link::after {
   display: block;
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 32px;
   width: 100%;
   height: 4px;
   background-color: var(--accent-cl);
   border-radius: 2px;
-  transform: scaleX(0);
+  transform: scaleX(1);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -131,7 +138,7 @@ p {
 .nav-link:hover::after,
 .nav-link:focus::after,
 .nav-link:active::after {
-  transform: scaleX(1);
+  transform: scaleX(0);
 }
 
 .about {
@@ -287,7 +294,8 @@ p {
   letter-spacing: 0.02em;
   color: #212121;
 }
-address {
+.address {
+  margin-top: 20px;
   font-style: normal;
 }
 
@@ -374,9 +382,9 @@ address {
 }
 
 .foot-address-block {
+  font-style: normal;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
 }
 
 .all-title {
@@ -396,7 +404,6 @@ address {
 .portfolio-index {
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
 }
 
 .portfolio-container {
@@ -435,7 +442,7 @@ address {
 .samples {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 34px;
+  margin-top: 54px;
 }
 
 .samples-items {
@@ -465,7 +472,7 @@ address {
 }
 
 .sample-small-container {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 .social-icons {
@@ -525,12 +532,18 @@ address {
   width: 16px;
   margin-right: 10px;
   fill: var(--main-text-cl);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cnt-item-svg-tel {
   height: 16px;
   width: 10px;
   margin-right: 10px;
   fill: var(--main-text-cl);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-item {
