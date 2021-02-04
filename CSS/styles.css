@@ -580,7 +580,6 @@ a {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  cursor: pointer;
   width: 170px;
   height: 90px;
   border: 1px solid var(--icons-color);
