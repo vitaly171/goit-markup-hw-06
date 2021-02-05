@@ -385,6 +385,7 @@ a {
   font-style: normal;
   display: flex;
   flex-direction: column;
+  margin-top: 9px;
 }
 
 .all-title {
@@ -437,6 +438,7 @@ a {
 .btn-portfolio:focus {
   color: var(--white);
   background-color: var(--accent-cl);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .samples {
@@ -552,7 +554,10 @@ a {
 
 .mail-tele-address {
   color: var(--rgba);
-  margin-top: 9px;
+}
+
+.mail-tele-address:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .contacts:hover .cnt-item-svg-mail,
